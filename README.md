@@ -10,9 +10,9 @@ Scrape filter information from an AO3 tag page using artoo.js and export it as a
 ## How to use
 1. Navigate to the AO3 page you want to get filter information from, ex. https://archiveofourown.org/tags/Scarlet%20Hollow%20(Video%20Game)/works
 2. Click on the bookmarklet. If all goes well, it will:
-   3. Automatically expand all fields on the filter bar.
-   4. Copy the top ten ratings, warnings, characters, fandoms, relationships, and additional tags, plus how many times each one is used.
-   5. Download the results as a .csv to your computer.
+      3. Automatically expand all fields on the filter bar.
+      4. Copy the top ten ratings, warnings, characters, fandoms, relationships, and additional tags, plus how many times each one is used.
+      5. Download the results as a .csv to your computer.
 
 ## How to customize
 Open bookmarklet.js in your preferred code editor, make your desired changes, then save as a new bookmarklet following the installation instructions. Full documentation of how this bookmarklet works can be found on [artoo.js's wiki](https://medialab.github.io/artoo/generator/).
