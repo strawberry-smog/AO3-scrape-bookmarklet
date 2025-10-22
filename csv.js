@@ -6,7 +6,7 @@ var scrapeAO3 = artoo.scrape(
       }
     },
       'uses': { method: function() {
-        return $(this).text().replace(/.+(?=\(\d+\)$)/gmi, '');
+        return $(this).text().replace(/.+(?=\(\d+\)$)|\D/gmi, '');
       }
     },
     'title': { method: function() {
@@ -14,7 +14,7 @@ var scrapeAO3 = artoo.scrape(
       }
     },
       'uses': { method: function() {
-        return $(this).text().replace(/.+(?=\(\d+\)$)/gmi, '');
+        return $(this).text().replace(/.+(?=\(\d+\)$)|\D/gmi, '');
       }
     }
     }, artoo.saveCsv);
