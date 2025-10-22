@@ -6,7 +6,15 @@ var scrapeAO3 = artoo.scrape(
       }
     },
       'uses': { method: function() {
-        return $(this).text().replace(/.+\d+\)\s+/gmi, '');
+        return $(this).text().replace(/.+(?=\(\d+\)$)/gmi, '');
+      }
+    },
+    'title': { method: function() {
+        return $(this).text().replace(/\s+\(\d+\)$/gmi, '');
+      }
+    },
+      'uses': { method: function() {
+        return $(this).text().replace(/.+(?=\(\d+\)$)/gmi, '');
       }
     }
     }, artoo.saveCsv);
