@@ -1,5 +1,5 @@
 # AO3-scrape-bookmarklet
-Scrape filter information from an AO3 tag page using artoo.js and export it as a .csv.
+Scrape filter information from an AO3 tag page using artoo.js and export it as a .csv. Created with the [artoo.js bookmarklet generator](https://medialab.github.io/artoo/generator/).
 
 > [!Important]
 > I have only tested this on Firefox. I also don't know anything about Javascript so I can't help if you have any problems. This probably doesn't work on mobile.
@@ -14,18 +14,18 @@ Scrape filter information from an AO3 tag page using artoo.js and export it as a
   4. Download the results as a .csv to your computer.
 
 ## How to customize
-Open bookmarklet.js in your preferred code editor, make your desired changes, then save as a new bookmarklet following the installation instructions. Full documentation of how this bookmarklet works can be found on [artoo.js's wiki](https://medialab.github.io/artoo/).
+Open raw.js in your preferred code editor, make your desired changes, then save as a new bookmarklet by going to [the artoo.js bookmarklet generator](https://medialab.github.io/artoo/generator/) and copying the generated bookmarklet url it gives you into a new bookmarklet. Full documentation of how this bookmarklet works can be found on [artoo.js's wiki](https://medialab.github.io/artoo/).
 
 ### To rename the data headers
 Change all instances of ```title``` and ```uses``` to your preferred names. Labels with spaces need to be wrapped in straight (not smart/curly) quotes, ```'like so'```. If you get an error after changing the name but it's one without spaces in it then you probably used some special Javascript word or something; try putting it in quotes.
 
 ### To only copy specific fields
 Find the parts of the code that start with ```artoo.scrape('#include_``` and end with ```});```. After each part that starts with ```#include_``` there will be a longer bit following it that elaborates upon which filter category it targets, such as ```#include_rating_tags```. Find the category you don't want data on and delete this section. The full list of categories is as follows:
-```qqq```
+```#include_rating_tags```, ```#include_archive_warning_tags```, ```#include_category_tags```, ```#include_fandom_tags```, ```#include_character_tags```, ```#include_relationship_tags```, ```#include_freeform_tags```.
 
 ### To save in a format other than .csv
 Replace ```artoo.saveCsv``` with your preferred data format. The full list of categories is as follows:
 ```qqq```
 
 ## Known issues
-1. I'm not sure how to change the title of the file even thought artoo.js does provide ways to do that
+1. I'm not sure how to change the title of the file even thought artoo.js does provide ways to do that.
