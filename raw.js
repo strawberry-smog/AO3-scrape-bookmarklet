@@ -8,13 +8,5 @@ var scrapeAO3 = artoo.scrape(
       'uses': { method: function() {
         return $(this).text().replace(/.+(?=\(\d+\)$)|\D/gmi, '');
       }
-    },
-    'title': { method: function() {
-        return $(this).text().replace(/\s+\(\d+\)$/gmi, '');
-      }
-    },
-      'uses': { method: function() {
-        return $(this).text().replace(/.+(?=\(\d+\)$)|\D/gmi, '');
-      }
     }
     }, artoo.saveCsv);
