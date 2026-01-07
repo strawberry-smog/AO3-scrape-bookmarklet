@@ -24,8 +24,7 @@ Find the parts of the code that start with ```artoo.scrape('#include_``` and end
 ```#include_rating_tags```, ```#include_archive_warning_tags```, ```#include_category_tags```, ```#include_fandom_tags```, ```#include_character_tags```, ```#include_relationship_tags```, ```#include_freeform_tags```.
 
 ### To save in a format other than .csv
-Replace ```artoo.saveCsv``` with your preferred data format. The full list of categories is as follows:
-```qqq```
+Replace ```artoo.saveCsv``` with your preferred data format, such as ```artoo.saveJson```. [More information on this here.](https://medialab.github.io/artoo/save/)
 
 ## Known issues
 1. I'm not sure how to change the title of the file even thought artoo.js does provide ways to do that.
