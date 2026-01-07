@@ -27,3 +27,6 @@ Find the parts of the code that start with ```artoo.scrape('#include_``` and end
 ### To save in a format other than .csv
 Replace ```artoo.saveCsv``` with your preferred data format. The full list of categories is as follows:
 ```qqq```
+
+## Known issues
+1. I'm not sure how to change the title of the file even thought artoo.js does provide ways to do that
